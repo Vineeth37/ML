@@ -67,7 +67,7 @@ Machine learning (ML) is a broad field that focuses on developing algorithms tha
   - Models the relationship between a dependent and an independent variable with a linear equation.
   - Aims to minimize the difference between predicted and actual values using techniques like Ordinary Least Squares.
  
-- 
+ 
 ###  Gradient Descent
 
 **Gradient Descent** is an optimization algorithm used to minimize the cost function of a machine learning model. It iteratively adjusts the model parameters to find the values that minimize the error or cost. Here’s a high-level overview of how it works:
