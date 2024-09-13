@@ -66,3 +66,42 @@ Machine learning (ML) is a broad field that focuses on developing algorithms tha
   - A supervised learning method for regression tasks.
   - Models the relationship between a dependent and an independent variable with a linear equation.
   - Aims to minimize the difference between predicted and actual values using techniques like Ordinary Least Squares.
+ 
+- 
+###  Gradient Descent
+
+**Gradient Descent** is an optimization algorithm used to minimize the cost function of a machine learning model. It iteratively adjusts the model parameters to find the values that minimize the error or cost. Here’s a high-level overview of how it works:
+
+- **Objective**: Find the minimum of a function. In machine learning, this often means finding the parameters that minimize the cost function (e.g., mean squared error).
+- **Process**: Start with initial guesses for the parameters and update them iteratively. At each step, compute the gradient (partial derivatives) of the cost function with respect to each parameter. The gradient tells us the direction in which the cost function increases the fastest.
+- **Update Rule**: Adjust the parameters in the opposite direction of the gradient to reduce the cost. The size of the step is controlled by the learning rate (\(\alpha\)).
+
+The update rule for parameter \(\theta\) is:
+\[ \theta = \theta - \alpha \cdot \nabla_{\theta} J(\theta) \]
+where \(\nabla_{\theta} J(\theta)\) is the gradient of the cost function \(J\) with respect to \(\theta\).
+
+###  Multiple Linear Regression
+
+**Multiple Linear Regression** is an extension of simple linear regression to predict a response variable using multiple features. It models the relationship between a dependent variable and several independent variables.
+
+- **Model**: The relationship is represented by a linear equation:
+  \[ y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \cdots + \beta_nx_n + \epsilon \]
+  where \(y\) is the dependent variable, \(x_1, x_2, \ldots, x_n\) are independent variables, \(\beta_0\) is the intercept, \(\beta_1, \beta_2, \ldots, \beta_n\) are the coefficients, and \(\epsilon\) is the error term.
+- **Objective**: Minimize the sum of squared errors (or residuals) between the predicted values and the actual values.
+
+###  Polynomial Linear Regression
+
+**Polynomial Linear Regression** is a type of regression where the relationship between the independent and dependent variables is modeled as an \(n\)-th degree polynomial. This allows for capturing non-linear relationships between the features and the target variable.
+
+- **Model**: The polynomial regression model can be written as:
+  \[ y = \beta_0 + \beta_1x + \beta_2x^2 + \cdots + \beta_nx^n + \epsilon \]
+  Here, \(x^2, x^3, \ldots, x^n\) are the polynomial features, which allow the model to fit more complex relationships.
+- **Objective**: Similar to linear regression, the goal is to minimize the sum of squared errors. However, the polynomial features can lead to overfitting if the degree of the polynomial is too high.
+
+### Summary
+
+- **Gradient Descent**: Optimization technique to minimize the cost function and find the best model parameters.
+- **Multiple Linear Regression**: Extends linear regression to use multiple features for predicting a target variable.
+- **Polynomial Linear Regression**: Extends linear regression to use polynomial features, capturing non-linear relationships.
+
+Each of these methods can be used depending on the complexity of the data and the nature of the relationships you want to model.
